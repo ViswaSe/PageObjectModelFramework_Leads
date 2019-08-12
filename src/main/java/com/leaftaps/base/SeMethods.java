@@ -325,7 +325,7 @@ public class SeMethods extends Reporter implements Browser, Element{
 
 	
 	public WebElement locateElement(String locatorType, String value) {
-		try {
+		/*try {
 			switch(locatorType.toLowerCase()) {
 			case "id": return driver.findElementById(value);
 			case "name": return driver.findElementByName(value);
@@ -338,7 +338,7 @@ public class SeMethods extends Reporter implements Browser, Element{
 			throw new RuntimeException();
 		}catch (Exception e) {
 			reportStep("The Element with locator:"+locatorType+" Not Found with value: "+value, "fail");
-		}
+		}*/
 		return null;
 	}
 
