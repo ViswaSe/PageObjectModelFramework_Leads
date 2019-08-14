@@ -22,6 +22,7 @@ public class TC_002_EditLeadInLeafTaps extends ProjectSpecificMethods{
 	@Test(dataProvider="fetchData")
 	public void editLeadInLeafTaps(String username,String password,String fname,String updatedName)
 	{
+		System.out.println("Edit lead test case");
 		new LoginPage()
 		.enterUserName(username)
 		.enterPassword(password)
