@@ -22,6 +22,7 @@ public class TC_001_CreateLeadInLeafTaps extends ProjectSpecificMethods{
 	@Test(dataProvider="fetchData")
 	public void createLeadInLeafTaps(String username,String password,String cname,String fname,String lname)
 	{
+		System.out.println("Create lead");
 		new LoginPage()
 		.enterUserName(username)
 		.enterPassword(password)
